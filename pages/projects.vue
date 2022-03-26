@@ -1,6 +1,6 @@
 <template>
   <div>
-      <el-collapse v-model="activeNames" accordion v-for="(project, idx) in projects" :key="idx" class="projects">
+      <el-collapse v-model="activeNames" accordion v-for="(project, idx) in dataset" :key="idx" class="projects">
         <el-collapse-item :name="idx">
           <template slot="title" >
               <div  class="projects__header clearfix">
@@ -37,30 +37,21 @@
 
 <script>
 export default {
+  async asyncData({store}) {
+   const dataset = await store.dispatch('projects/getAll')
+   return {dataset}
+  },
   data() {
     return {
+      tags: [],
       activeNames: [false],
       showthis: false,
       projects: [],
-      tags: 
-        {
-          nuxt: {
-            icon: 'nuxt.svg',
-            name: 'NuxtJS'
-          },    
-          vue: {
-            icon: 'vue.svg',
-            name: 'VueJS'
-          },
-          mongodb: {
-            icon: 'mongodb.svg',
-            name: 'MongoDB'
-          },       
-        }          
+         
     }
   },
   mounted() {
-    this.projects = this.$store.getters['projects/projects']
+   this.tags = this.$store.getters['projects/tags']
   },
   methods: {
     

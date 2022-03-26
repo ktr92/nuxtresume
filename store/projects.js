@@ -1,24 +1,39 @@
 export const state = () => ({
-  projects: [
+  tags: 
     {
-      prname: "CRM система",
-      prdescription: "CRM система для студии заточки. Основным требованием было заменить используемую ранее систему в формате Excel таблиц и перенести все данные из старой системы в новую. Дополнительные требования: схожесть с excel таблицами, простота использования, статистика по произвольному интервалу времени.",
-      prtags: ['nuxt', 'vue', 'mongodb'],
-      prlink: "https://crm-ideal.herokuapp.com/",
-      prgit: "https://github.com/ktr92/crmvuetify",
-      prpreview: [],
-    },
-    {
-      prname: "Подбор витаминов онлайн",
-      prdescription: "Сервис подбора витаминов для блога. Реализован на Vue 3 Composition API. ",
-      prtags: ['vue'],
-      prlink: "http://vuecalc.tmweb.ru/",
-      prwork: "https://herbblog.ru/podbor-vitaminov/",
-      prgit: "https://github.com/ktr92/appcalc",
-      prpreview: []
-    },
-
-  ]
+      nuxt: {
+        icon: 'nuxt.svg',
+        name: 'NuxtJS'
+      },    
+      vue: {
+        icon: 'vue.svg',
+        name: 'VueJS'
+      },
+      mongodb: {
+        icon: 'mongodb.svg',
+        name: 'MongoDB'
+      },       
+      html: {
+        icon: 'html.svg',
+        name: 'HTML'
+      },       
+      css: {
+        icon: 'css.svg',
+        name: 'CSS'
+      },       
+      vuetify: {
+        icon: 'vuetify.svg',
+        name: 'Vuetify'
+      },       
+      elementui: {
+        icon: 'element.svg',
+        name: 'ElementUI'
+      },       
+      elementui: {
+        icon: 'element.svg',
+        name: 'ElementUI'
+      },       
+    }      
 })
 
 export const mutations = {
@@ -26,9 +41,45 @@ export const mutations = {
 }
 
 export const actions = {
-
+  async create({commit}, data) {
+    try {
+      return await this.$axios.$post('/api/projects/admin/create', data)
+    } catch (e) {
+      throw e
+    }
+  },
+  async remove({commit}, id) {
+    try {
+      return await this.$axios.$post(`/api/projects/admin/remove/${id}`)
+    } catch (e) {
+      throw e
+    }
+  },
+  async update({commit}, data) {
+    try {
+      return await this.$axios.$put(`/api/projects/admin/edit/${id}`, data)
+    } catch (e) {
+    
+      throw e
+    }
+  },
+  async getAll({commit}, data) {
+    try {
+      return await this.$axios.$get('/api/projects') 
+    } catch (error) {
+      
+    }
+  },
+  async fetchAdminById({commit}, id) {
+    try {
+      return await this.$axios.$get(`/api/projects/admin/${id}`)
+    } catch (e) {
+      commit('setError', e, {root: true})
+      throw e
+    }
+  },
 }
 
 export const getters = {
-  projects: state => state.projects
+  tags: state => state.tags
 }
