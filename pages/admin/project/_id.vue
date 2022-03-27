@@ -103,7 +103,7 @@ export default {
         prwork: '',
         tags: [],
       },
-      skills: ['nuxt', 'vue', 'mongodb', 'html', 'css', 'scss', 'opencart', 'bitrix', 'diafan', 'wordpress', 'firebase'],
+      skills: [],
       rules: {
         title: [
           { required: true, message: 'Название поста не может быть пустым', trigger: 'blur' }
@@ -117,6 +117,8 @@ export default {
     this.controls.prlink = this.project.prlink
     this.controls.prwork = this.project.prwork
     this.controls.prgit = this.project.prgit
+    this.controls.tags = this.project.prtags
+    this.skills = Object.keys(this.$store.getters['projects/tags'])
   },
   methods: {
     onSubmit() {
@@ -133,13 +135,15 @@ export default {
             prtags: this.controls.tags,
             id: this.project._id
           }
-
+          
           try {
             await this.$store.dispatch('projects/update', formData)
             this.loading = false
+            this.$router.push('/admin/list')
           } catch (e) {
             this.loading = false
           }
+
         }
       })
     }

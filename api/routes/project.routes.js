@@ -6,8 +6,8 @@ const router = Router()
 // /api/projects/
 router.post('/admin/create', ctr.create)
 router.get('/admin/:id', ctr.getById)
-router.put('/admin/edit/:id', ctr.update)
-router.delete('/admin/remove/:id', ctr.remove)
+router.put('/admin/:id', ctr.update)
+router.delete('/admin/:id', ctr.remove)
 
 
 // Base

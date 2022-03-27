@@ -1,5 +1,8 @@
 <template>
   <el-container>
+    <el-aside width="200px">
+      <TheAside />
+    </el-aside>
     <el-main>
       <Nuxt />
     </el-main>

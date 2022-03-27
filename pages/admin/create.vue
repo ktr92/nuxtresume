@@ -91,13 +91,13 @@ export default {
       loading: false,
       controls: {
         title: '',
-        text: '',
+        text: 'Адаптивная верстка сайта ',
         prlink: '',
         prgit: '',
         prwork: '',
         tags: [],
       },
-      skills: ['nuxt', 'vue', 'mongodb', 'html', 'css', 'scss', 'opencart', 'bitrix', 'diafan', 'wordpress', 'firebase'],
+      skills: [],
       rules: {
         
         title: [
@@ -105,6 +105,9 @@ export default {
         ]
       }
     }
+  },
+  mounted() {
+    this.skills = Object.keys(this.$store.getters['projects/tags'])
   },
   methods: {
     onSubmit() {
@@ -124,12 +127,7 @@ export default {
 
           try {
             await this.$store.dispatch('projects/create', formData)
-            this.controls.prname = ''
-            this.controls.prdescription = ''
-            this.controls.prlink = ''
-            this.controls.prwork = ''
-            this.controls.prgit = ''
-            this.controls.prtags = []
+            this.$router.push('/admin/list')
            
           } catch (e) {} finally {
             this.loading = false
@@ -147,10 +145,5 @@ export default {
   form {
     width: 600px;
   }
-  .tags {
-    padding-right: 20px;
-    padding-bottom: 5px;
-    width: 100px;
-    display: inline-block;
-  }
+ 
 </style>

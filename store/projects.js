@@ -29,9 +29,29 @@ export const state = () => ({
         icon: 'element.svg',
         name: 'ElementUI'
       },       
-      elementui: {
-        icon: 'element.svg',
-        name: 'ElementUI'
+      scss: {
+        icon: 'scss.svg',
+        name: 'SCSS'
+      },       
+      js: {
+        icon: 'js.svg',
+        name: 'JavaScript'
+      },       
+      jquery: {
+        icon: 'jquery.svg',
+        name: 'jQuery'
+      },       
+      figma: {
+        icon: 'figma.svg',
+        name: 'Figma'
+      },       
+      photoshop: {
+        icon: 'photoshop.svg',
+        name: 'Photoshop'
+      },       
+      webpack: {
+        icon: 'webpack.svg',
+        name: 'Webpack'
       },       
     }      
 })
@@ -50,14 +70,14 @@ export const actions = {
   },
   async remove({commit}, id) {
     try {
-      return await this.$axios.$post(`/api/projects/admin/remove/${id}`)
+      return await this.$axios.$delete(`/api/projects/admin/${id}`)
     } catch (e) {
       throw e
     }
   },
   async update({commit}, data) {
     try {
-      return await this.$axios.$put(`/api/projects/admin/edit/${id}`, data)
+      return await this.$axios.$put(`/api/projects/admin/${data.id}`, data)
     } catch (e) {
     
       throw e

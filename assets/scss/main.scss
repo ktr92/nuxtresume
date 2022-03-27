@@ -28,9 +28,16 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('~/assets/fonts/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
-  font-family: 'Futura PT';
+  font-family: 'Futura PT Book';
   font-weight: normal;
 }
 a {
@@ -94,6 +101,15 @@ a {
   line-height: 20px;
 }
 
+.tags {
+  padding-right: 20px;
+  padding-bottom: 5px;
+  width: 100px;
+  display: inline-block;
+}
+span.projects__title {
+  font-family: 'Futura PT';
+}
 
 @media (min-width: 1024px) {
   span.projects__title {

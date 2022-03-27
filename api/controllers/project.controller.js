@@ -48,13 +48,12 @@ module.exports.update = async (req, res) => {
     prlink: req.body.prlink,
     prwork: req.body.prwork,
     prgit: req.body.prgit,
-    prtags: req.body.tags,
+    prtags: req.body.prtags,
   }
-  console.log($set)
   try {
     const project = await Project.findOneAndUpdate({
       _id: req.params.id
-    }, {$set}, {new: true})
+    }, $set, {new: true})
     res.status(200).json(project)
   } catch (error) {
     res.status(500).json(error)

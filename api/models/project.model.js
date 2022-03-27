@@ -17,6 +17,9 @@ const projectSchema = new Schema({
   prgit: {
     type: String,
   },
+  prwork: {
+    type: String,
+  },
   prpreview: {
     type: String,
   },
