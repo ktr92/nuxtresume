@@ -3,56 +3,80 @@ export const state = () => ({
     {
       nuxt: {
         icon: 'nuxt.svg',
-        name: 'NuxtJS'
+        name: 'NuxtJS',
+        sort: 1,
       },    
       vue: {
         icon: 'vue.svg',
-        name: 'VueJS'
+        name: 'VueJS',
+        sort: 2,
       },
       mongodb: {
         icon: 'mongodb.svg',
-        name: 'MongoDB'
+        name: 'MongoDB',
+        sort: 3,
       },       
       html: {
         icon: 'html.svg',
-        name: 'HTML'
+        name: 'HTML',
+        sort: 10,
       },       
       css: {
         icon: 'css.svg',
-        name: 'CSS'
+        name: 'CSS',
+        sort: 11,
       },       
       vuetify: {
         icon: 'vuetify.svg',
-        name: 'Vuetify'
+        name: 'Vuetify',
+        sort: 20,
       },       
       elementui: {
         icon: 'element.svg',
-        name: 'ElementUI'
+        name: 'ElementUI',
+        sort: 21,
       },       
       scss: {
         icon: 'scss.svg',
-        name: 'SCSS'
+        name: 'SCSS',
+        sort: 12,
       },       
       js: {
         icon: 'js.svg',
-        name: 'JavaScript'
+        name: 'JavaScript',
+        sort: 15,
       },       
       jquery: {
         icon: 'jquery.svg',
-        name: 'jQuery'
+        name: 'jQuery',
+        sort: 16,
       },       
       figma: {
         icon: 'figma.svg',
-        name: 'Figma'
+        name: 'Figma',
+        sort: 40,
       },       
       photoshop: {
         icon: 'photoshop.svg',
-        name: 'Photoshop'
+        name: 'Photoshop',
+        sort: 41,
       },       
       webpack: {
         icon: 'webpack.svg',
-        name: 'Webpack'
+        name: 'Webpack',
+        sort: 50,
       },       
+      php: {
+        icon: 'php.svg',
+        name: 'PHP',
+        sort: 20,
+      },       
+      diafan: {
+        icon: 'diafan.jpg',
+        name: 'diafan.CMS',
+        sort: 7,
+      },       
+          
     }      
 })
 

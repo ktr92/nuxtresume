@@ -23,6 +23,9 @@ const projectSchema = new Schema({
   prpreview: {
     type: String,
   },
+  prsort: {
+    type: Number,
+  },
 })
 
 module.exports = model('projects', projectSchema)

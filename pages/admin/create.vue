@@ -45,6 +45,13 @@
       
       />
     </el-form-item>
+     <el-form-item label="Порядок сортировки" prop="text">
+      <el-input
+        type="number"
+        v-model="controls.prsort"
+      
+      />
+    </el-form-item>
 
     <el-checkbox-group v-model="controls.tags">
       <span v-for="item in skills" :key="item" class="tags">
@@ -83,7 +90,7 @@
 <script>
 export default {
   layout: 'admin',
-  /* middleware: ['admin-auth'], */
+  middleware: ['admin-auth'],
   data() {
     return {
       image: null,
@@ -91,11 +98,12 @@ export default {
       loading: false,
       controls: {
         title: '',
-        text: 'Адаптивная верстка сайта ',
+        text: 'Адаптивная верстка сайта с каталогом, фильтром, информационными страницами, модальными окнами, слайдерами ',
         prlink: '',
         prgit: '',
         prwork: '',
         tags: [],
+        prsort: 1,
       },
       skills: [],
       rules: {
@@ -121,13 +129,14 @@ export default {
             prlink: this.controls.prlink,
             prwork: this.controls.prwork,
             prgit: this.controls.prgit,
-            prtags: this.controls.tags
+            prtags: this.controls.tags,
+            prsort: this.controls.prsort
            /*  image: this.image */
           }
 
           try {
             await this.$store.dispatch('projects/create', formData)
-            this.$router.push('/admin/list')
+            this.$router.push('/admin/')
            
           } catch (e) {} finally {
             this.loading = false

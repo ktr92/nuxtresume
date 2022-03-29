@@ -22,7 +22,7 @@ module.exports.remove = async (req, res) => {
 
 module.exports.getAll = async (req, res) => {
   try {
-    const projects = await Project.find()
+    const projects = await Project.find().sort({prsort: 1})
     res.status(200).json(projects)
   } catch (error) {
     res.status(500).json(error)
@@ -49,6 +49,7 @@ module.exports.update = async (req, res) => {
     prwork: req.body.prwork,
     prgit: req.body.prgit,
     prtags: req.body.prtags,
+    prsort: req.body.prsort,
   }
   try {
     const project = await Project.findOneAndUpdate({

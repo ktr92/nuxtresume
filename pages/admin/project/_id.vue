@@ -11,7 +11,7 @@
       ref="form"
       @submit.native.prevent="onSubmit"
     >
-    <el-form-item label="Название" prop="text">
+    <el-form-item label="Название" prop="title">
        <el-input
         type="text"
         v-model="controls.title"
@@ -23,8 +23,7 @@
       <el-input
         type="textarea"
         v-model="controls.text"
-        resize="none"
-        :rows="4"
+        :rows="14"
       />
     </el-form-item>
 
@@ -53,6 +52,14 @@
       />
     </el-form-item>
 
+     <el-form-item label="Порядок сортировки" prop="text">
+      <el-input
+        type="number"
+        v-model="controls.prsort"
+      
+      />
+    </el-form-item>
+
     <el-checkbox-group v-model="controls.tags">
       <span v-for="item in skills" :key="item" class="tags">
         <el-checkbox :label="item"></el-checkbox>
@@ -77,7 +84,7 @@
 
 <script>
 export default {
- 
+  middleware: ['admin-auth'],
   layout: 'admin',
   head() {
     return {
@@ -102,6 +109,7 @@ export default {
         prgit: '',
         prwork: '',
         tags: [],
+        prsort: [],
       },
       skills: [],
       rules: {
@@ -118,6 +126,7 @@ export default {
     this.controls.prwork = this.project.prwork
     this.controls.prgit = this.project.prgit
     this.controls.tags = this.project.prtags
+    this.controls.prsort = this.project.prsort
     this.skills = Object.keys(this.$store.getters['projects/tags'])
   },
   methods: {
@@ -133,13 +142,14 @@ export default {
             prwork: this.controls.prwork,
             prgit: this.controls.prgit,
             prtags: this.controls.tags,
+            prsort: this.controls.prsort,
             id: this.project._id
           }
           
           try {
             await this.$store.dispatch('projects/update', formData)
             this.loading = false
-            this.$router.push('/admin/list')
+            this.$router.push('/admin/')
           } catch (e) {
             this.loading = false
           }

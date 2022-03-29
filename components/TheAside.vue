@@ -3,7 +3,7 @@
       default-active="2"
       class="el-menu-vertical-demo"
       :router="true">
-      <el-menu-item index="1" route="/admin/list">
+      <el-menu-item index="1" route="/admin/">
         <i class="el-icon-menu"></i>
         <span>Все проекты</span>
       </el-menu-item>

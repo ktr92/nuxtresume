@@ -33,6 +33,7 @@
 <script>
 export default {
   layout: 'admin',
+  middleware: ['admin-auth'],
   async asyncData({store}) {
     const dataset = await store.dispatch('projects/getAll')
     return {dataset}
