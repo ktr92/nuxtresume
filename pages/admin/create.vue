@@ -18,8 +18,7 @@
       <el-input
         type="textarea"
         v-model="controls.text"
-        resize="none"
-        :rows="4"
+        :rows="14"
       />
     </el-form-item>
 

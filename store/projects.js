@@ -76,6 +76,11 @@ export const state = () => ({
         name: 'diafan.CMS',
         sort: 7,
       },       
+      opencart: {
+        icon: 'opencart.svg',
+        name: 'OpenCart CMS',
+        sort: 7,
+      },       
           
     }      
 })
