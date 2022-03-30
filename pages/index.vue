@@ -28,13 +28,13 @@
             </el-descriptions-item>
             <el-descriptions-item>
               <template slot="label">
-                <i class="el-icon-loading"></i>
+                <i class="el-icon-chat-round"></i>
                Способы связи
               </template>
           <el-button-group>
-            <el-button type="primary" icon="el-icon-message" @click="email"></el-button>
-            <el-button type="primary" @click="telegram"><img src="~/assets/img/tg.svg" alt=""></el-button>
-            <el-button type="primary" icon="el-icon-mobile-phone" @click="call"></el-button>
+            <el-button type="info" icon="el-icon-message" @click="email"></el-button>
+            <el-button type="info" @click="telegram"><img src="~/assets/img/tg.svg" alt=""></el-button>
+            <el-button type="info" icon="el-icon-mobile-phone" @click="call"></el-button>
           </el-button-group>           
        </el-descriptions-item>           
       </el-descriptions>
@@ -63,6 +63,47 @@
           {{ item.label }}
         </el-tag>
       </div>
+
+       <h3>Знание иностранных языков</h3>
+      <div class="tag-group">
+        <span class="tag-group__title"></span>
+        <el-tag
+          v-for="item in langs"
+          :key="item.label"
+          :type="item.type"
+          effect="dark">
+          {{ item.label }}
+        </el-tag>
+      </div>
+
+      <h3>О себе</h3>
+      <div class="description">
+      <p>Опыт адаптивной кроссбраузерной верстки сайтов более 6 лет. Опыт Frontend разработки Vue JS небольшой, но это направление, в котором я активно развиваюсь. Также развиваюсь в направлении Fullstack разработки на NuxtJS и ставлю это направление в свой будущий приоритет. Занимаюсь улучшением знания английского языка, чтобы сразу понимать документацию в оригинале. Имею опыт работы как в команде, так и удаленно.</p>
+
+      <NuxtLink to="/projects"><el-button type="primary">Перейти в портфолио</el-button></NuxtLink>
+      <p><span> Приблизительная статистика по опыту: </span>
+        <el-badge :value="120" :max="100" class="badge">
+          <el-button size="small">Html лендингов</el-button>
+        </el-badge>
+        <el-badge :value="70" :max="99" class="badge">
+          <el-button size="small">Html сайтов</el-button>
+        </el-badge>
+        <el-badge :value="8" :max="99" class="badge">
+          <el-button size="small">Vue проектов</el-button>
+        </el-badge>
+        <el-badge :value="3" :max="99" class="badge">
+          <el-button size="small">Nuxt проектов</el-button>
+        </el-badge>
+        <el-badge :value="35" :max="99" class="badge">
+          <el-button size="small">CMS сайтов</el-button>
+        </el-badge>
+       
+        <el-badge :value="999" :max="599" class="badge">
+          <el-button size="small">задач по верстке</el-button>
+        </el-badge>
+
+      </p>
+      </div><!-- /.description -->
 
          
       <h3>Образование и Опыт работы</h3>
@@ -110,22 +151,21 @@ export default {
   data() {
     return {
       skills: [
-          { type: 'success', label: 'HTML' },
-          { type: 'success', label: 'CSS' },
-          { type: 'success', label: 'SCSS' },
-          { type: 'success', label: 'Javascript' },
-          { type: 'success', label: 'jQuery' },
-          { type: 'success', label: 'VueJS' },
-          { type: 'success', label: 'NuxtJS' },
-          { type: 'success', label: 'MongoDB' },
-          { type: 'success', label: 'Typescript' },
-          { type: 'success', label: 'Figma' },
-          { type: 'success', label: 'Photoshop' },
+          { type: 'info', label: 'HTML' },
+          { type: 'info', label: 'CSS' },
+          { type: 'info', label: 'SCSS' },
+          { type: 'info', label: 'Javascript' },
+          { type: 'info', label: 'jQuery' },
+          { type: 'info', label: 'VueJS' },
+          { type: 'info', label: 'NuxtJS' },
+          { type: 'info', label: 'MongoDB' },
+          { type: 'info', label: 'Figma' },
+          { type: 'info', label: 'Photoshop' },
          
         ],
       skills2: [
+          { type: 'info', label: 'Typescript' },
           { type: 'info', label: 'Webpack' },
-          { type: 'info', label: 'Git' },
           { type: 'info', label: 'C++' },
           { type: 'info', label: 'Python' },
           { type: 'info', label: 'Matlab' },
@@ -133,6 +173,10 @@ export default {
           { type: 'info', label: 'CMS Opencart' },
           { type: 'info', label: 'CMS Diafan' },
           { type: 'info', label: 'SEO' },
+        ],
+      langs: [
+          { type: 'info', label: 'Английский А2' },
+          { type: 'info', label: 'Французский А2' },
         ],
 
 
@@ -185,6 +229,16 @@ export default {
 .el-tag {
   margin-right: 5px;
 }
-
-
+.badge {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.description span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+sup.el-badge__content.el-badge__content--undefined.is-fixed {
+  right: 32px !important;
+}
 </style>
