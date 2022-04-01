@@ -1,12 +1,16 @@
 <template>
-  <el-container>
-    <el-header>
+  <div>
+     <el-header>
       <TheHeader />
     </el-header>
+   <el-container>
     <el-main>
       <Nuxt />
     </el-main>
   </el-container>
+  </div>
+ 
+   
 </template>
 
 <script>

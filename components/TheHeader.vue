@@ -23,9 +23,9 @@ export default {
     height: 60px;
     line-height: 60px;
     margin: 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 6px solid #fff;
     color: #fff;
-    background: #00dc82;
+    background: #909399;
     width: 50%;
     text-align: center;
     font-size: 24px;
@@ -34,7 +34,10 @@ export default {
 }
 .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-menu-item:focus, .el-menu--horizontal>.el-menu-item.is-active {
   color: #FFF;
-    background-color: #4de7a8;
-    border-color: #4de7a8;
+    background-color: #909399;
+    border-color: #00dc82;
+}
+.el-header {
+  padding: 0;
 }
 </style>
