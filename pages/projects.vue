@@ -19,7 +19,7 @@
                   </span>
                 </span>
               </div>
-               </template>
+               </template> 
               <div class="text item projects__text">
                  <p><vue-markdown>{{ project.prdescription }}</vue-markdown></p>
               </div>
