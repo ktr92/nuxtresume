@@ -17,7 +17,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "../assets/scss/partials/_params.scss";
+
   .el-menu--horizontal>.el-menu-item {
     float: left;
     height: 60px;
@@ -25,7 +27,7 @@ export default {
     margin: 0;
     border-bottom: 6px solid #fff;
     color: #fff;
-    background: #909399;
+    background: $darkcolor;
     width: 50%;
     text-align: center;
     font-size: 24px;
@@ -34,7 +36,7 @@ export default {
 }
 .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-menu-item:focus, .el-menu--horizontal>.el-menu-item.is-active {
   color: #FFF;
-    background-color: #909399;
+    background-color: $darkcolor;
     border-color: #00dc82;
 }
 .el-header {
