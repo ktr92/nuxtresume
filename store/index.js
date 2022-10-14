@@ -6,30 +6,32 @@ export const state = () => ({
   emailvalue: "ktr992@yandex.ru",
   phonevalue: '89869108073',
   tgvalue: '//tttttt.me/ktr992',
-  description: 'Опыт адаптивной кроссбраузерной верстки сайтов более 6 лет. Небольшой опыт Frontend разработки VueJS и NuxtJS.',
+  description: 'Опыт адаптивной кроссбраузерной верстки более 7 лет. Опыт коммерческой Frontend разработки VueJS более 1 года',
   skills: [    
     { type: 'info', label: 'VueJS' },
     { type: 'info', label: 'NuxtJS' },
-    { type: 'info', label: 'MongoDB' },
     { type: 'info', label: 'HTML' },
     { type: 'info', label: 'CSS' },
     { type: 'info', label: 'SCSS' },    
     { type: 'info', label: 'Javascript' },
     { type: 'info', label: 'jQuery' }, 
-    { type: 'info', label: 'Pug' },  
+    { type: 'info', label: 'Тестирование Jest/Cypress' },  
   ],
   skills2: [    
-    { type: 'info', label: 'Typescript' },
+   // { type: 'info', label: 'Typescript' },
+   { type: 'info', label: 'Pug' },  
+
+   { type: 'info', label: 'MongoDB' },
     { type: 'info', label: 'Webpack' },    
     { type: 'info', label: 'Git' },
-    { type: 'info', label: 'C++' },
-    { type: 'info', label: 'Python' },
-    { type: 'info', label: 'Matlab' },
-    { type: 'info', label: 'MySQL' },    
     { type: 'info', label: 'Figma' },
     { type: 'info', label: 'Photoshop' },    
-    { type: 'info', label: 'CMS Opencart' },
-    { type: 'info', label: 'CMS Diafan' }
+   // { type: 'info', label: 'C++' },
+   // { type: 'info', label: 'Python' },
+   // { type: 'info', label: 'Matlab' },
+    { type: 'info', label: 'MySQL' },   
+   // { type: 'info', label: 'CMS Opencart' },
+   // { type: 'info', label: 'CMS Diafan' }
   ],
   langs: [
     { type: 'info', label: 'Английский' },
@@ -47,32 +49,31 @@ export const state = () => ({
     {
       date: '2015 - 2018',
       title: 'VELVETMEDIA, веб-студия г. Набережные Челны',
-      description: 'Верстка HTML CSS JS. Интеграция сайтов на CMS Diafan, Wordpress. Оптимизация, поддержка работы сайтов. Выполнение всего комплекса работ по технической части.',
+      description: 'Верстка HTML CSS JS и интеграция на CMS. Разработка и оптимизация работы веб-сайтов.',
       role: 'Верстальщик, программист',
       status: 'past',
       id: '002'
     },
     {
-      date: '2018',
-      title: 'Фриланс, разработка собственных проектов',
-      description: 'Верстка и другие виды работ на фрилансе - <a href="//www.fl.ru/users/ktr992/portfolio/#/" target="_blank">ссылка на фриланс профиль</a>',
-      role: 'Верстальщик, программист',
+      date: '2018 - 04.2022',
+      title: 'ООО "Эмпис", интернет-агентство полного цикла, г.Москва - <a href="//www.empis.ru" target="_blank">empis.ru</a> ',
+      description: 'Frontend разработка и верстка макетов.',
+      role: 'Верстальщик, Frontend-разработчик',
       status: 'past',
-      id: '003'
+      id: '004'
     },
     {
-      date: '2018 - н.в.',
-      title: 'ООО "Эмпис", интернет-агентство полного цикла, г.Москва (удаленно) - <a href="//www.empis.ru" target="_blank">empis.ru</a> ',
-      description: 'Верстка сайтов и задачи по Frontend разработке JS. Выполнение всего комплекса задач по Frontend части.',
-      role: 'Верстальщик, Frontend-разработчик',
+      date: '04.2022 - н.в.',
+      title: 'ООО "ИПОТЕХ", Иннополис',
+      description: 'Разработка Frontend части приложений Nuxt Vue.',
+      role: 'Frontend-разработчик',
       status: 'present',
-      id: '004'
+      id: '005'
     },
   ],
   about: `<div>
-    <p>Здесь представлена некоторая часть моего опыта коммерческой разработки.</p>
+    <p>Некоторая часть моего опыта коммерческой разработки.</p>
     <p>Проекты, у которых есть ссылка на сайт, могли существенно видоизмениться без моего участия.</p>
-    
   </div>`
 
 })
