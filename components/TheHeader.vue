@@ -26,18 +26,18 @@ export default {
     line-height: 60px;
     margin: 0;
     border-bottom: 6px solid #fff;
-    color: #fff;
-    background: $darkcolor;
-    width: 50%;
+    color: #222;
+/*     background: $darkcolor;
+ */    width: 50%;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-menu-item:focus, .el-menu--horizontal>.el-menu-item.is-active {
-  color: #FFF;
-    background-color: $darkcolor;
-    border-color: #00dc82;
+  color: #222;
+/*     background-color: $darkcolor;
+ */    border-color: #00dc82;
 }
 .el-header {
   padding: 0;

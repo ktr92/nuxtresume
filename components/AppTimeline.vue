@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     color(status) {
-      return status === 'present' ? '#00dc82': '#909399'
+      return status === 'present' ? '#409eff': '#909399'
     }    
   }
 }
