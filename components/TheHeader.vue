@@ -52,7 +52,7 @@ export default {
   color: #222;
    border-color: #409eff;
 }
- .el-menu-demo .nuxt-link-exact-active div,  .el-menu-demo .nuxt-link-active div{
+ .el-menu-demo .nuxt-link-exact-active div {
   color: #222;
    border-color: #409eff;
 }
