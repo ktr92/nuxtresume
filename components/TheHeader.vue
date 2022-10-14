@@ -37,7 +37,7 @@ export default {
 .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-menu-item:focus, .el-menu--horizontal>.el-menu-item.is-active {
   color: #222;
 /*     background-color: $darkcolor;
- */    border-color: #00dc82;
+ */    border-color: #409eff;
 }
 .el-header {
   padding: 0;

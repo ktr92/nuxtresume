@@ -19,6 +19,7 @@ export const state = () => ({
   ],
   skills2: [    
    // { type: 'info', label: 'Typescript' },
+   { type: 'info', label: 'REST' },  
    { type: 'info', label: 'Pug' },  
 
    { type: 'info', label: 'MongoDB' },
