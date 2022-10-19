@@ -18,7 +18,7 @@
           </div>
           <el-button-group>
             <el-button type="primary" v-if="data.prgit">
-              <a v-if="data.prgit === '0'" href="#" target="_blank">ПО ЗАПРОСУ</a> 
+              <a v-if="data.prgit === '0'" href="#">ПО ЗАПРОСУ</a> 
               <a v-else :href="data.prgit" target="_blank">GitHub</a> 
             </el-button>
             <el-button type="primary" v-if="data.prlink">
