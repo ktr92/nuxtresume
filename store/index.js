@@ -1,42 +1,42 @@
 export const state = () => ({
-  name: "Кудашев Тимур",
-  city: "Набережные Челны",
-  date: "25 июня 1992",
-  status: "Ищу работу Frontend разработчиком VueJS, NuxtJS",
-  emailvalue: "ktr992@yandex.ru",
+  name: 'Кудашев Тимур',
+  city: 'Набережные Челны',
+  date: '25 июня 1992',
+  status: 'Ищу работу Frontend разработчиком VueJS, NuxtJS',
+  emailvalue: 'ktr992@yandex.ru',
   phonevalue: '89869108073',
   tgvalue: '//tttttt.me/ktr992',
   description: 'Опыт адаптивной кроссбраузерной верстки более 7 лет. Опыт коммерческой Frontend разработки VueJS более 1 года',
-  skills: [    
+  skills: [
     { type: 'info', label: 'VueJS' },
     { type: 'info', label: 'NuxtJS' },
     { type: 'info', label: 'HTML' },
     { type: 'info', label: 'CSS' },
-    { type: 'info', label: 'SCSS' },    
+    { type: 'info', label: 'SCSS' },
     { type: 'info', label: 'Javascript' },
-    { type: 'info', label: 'jQuery' }, 
-    { type: 'info', label: 'Тестирование Jest/Cypress' },  
+    { type: 'info', label: 'jQuery' },
+    { type: 'info', label: 'Тестирование Jest/Cypress' }
   ],
-  skills2: [    
-   // { type: 'info', label: 'Typescript' },
-   { type: 'info', label: 'REST' },  
-   { type: 'info', label: 'Pug' },  
+  skills2: [
+    // { type: 'info', label: 'Typescript' },
+    { type: 'info', label: 'REST' },
+    { type: 'info', label: 'Pug' },
 
-   { type: 'info', label: 'MongoDB' },
-    { type: 'info', label: 'Webpack' },    
+    { type: 'info', label: 'MongoDB' },
+    { type: 'info', label: 'Webpack' },
     { type: 'info', label: 'Git' },
     { type: 'info', label: 'Figma' },
-    { type: 'info', label: 'Photoshop' },    
-   // { type: 'info', label: 'C++' },
-   // { type: 'info', label: 'Python' },
-   // { type: 'info', label: 'Matlab' },
-    { type: 'info', label: 'MySQL' },   
-   // { type: 'info', label: 'CMS Opencart' },
-   // { type: 'info', label: 'CMS Diafan' }
+    { type: 'info', label: 'Photoshop' },
+    // { type: 'info', label: 'C++' },
+    // { type: 'info', label: 'Python' },
+    // { type: 'info', label: 'Matlab' },
+    { type: 'info', label: 'MySQL' }
+    // { type: 'info', label: 'CMS Opencart' },
+    // { type: 'info', label: 'CMS Diafan' }
   ],
   langs: [
     { type: 'info', label: 'Английский' },
-    { type: 'info', label: 'Французский' },
+    { type: 'info', label: 'Французский' }
   ],
   experience: [
     {
@@ -70,7 +70,7 @@ export const state = () => ({
       role: 'Frontend-разработчик',
       status: 'present',
       id: '005'
-    },
+    }
   ],
   about: `<div>
     <p>Некоторая часть моего опыта коммерческой разработки.</p>
@@ -78,4 +78,3 @@ export const state = () => ({
   </div>`
 
 })
-

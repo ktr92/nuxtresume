@@ -1,8 +1,8 @@
 <template>
   <div>
-     <div class="description">
-      <p v-html="data"></p>
-     </div>
+    <div class="description">
+      <p v-html="data" />
+    </div>
   </div>
 </template>
 
