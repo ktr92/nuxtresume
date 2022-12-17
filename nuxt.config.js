@@ -52,6 +52,11 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  server: {
+    port: 3000,
+    host: '0.0.0.0'
+  },
+
   serverMiddleware: [
     '~/api/index.js',
   ],
