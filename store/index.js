@@ -6,7 +6,7 @@ export const state = () => ({
   emailvalue: "ktr992@yandex.ru",
   phonevalue: '89869108073',
   tgvalue: '//tttttt.me/ktr992',
-  description: 'Опыт адаптивной кроссбраузерной верстки более 7 лет. Опыт коммерческой Frontend разработки VueJS более 1 года',
+  description: 'Опыт адаптивной кроссбраузерной верстки более 8 лет. Опыт коммерческой Frontend разработки Vue, Nuxt более 2 лет',
   skills: [    
     { type: 'info', label: 'VueJS' },
     { type: 'info', label: 'NuxtJS' },
@@ -15,21 +15,20 @@ export const state = () => ({
     { type: 'info', label: 'SCSS' },    
     { type: 'info', label: 'Javascript' },
     { type: 'info', label: 'jQuery' }, 
-    { type: 'info', label: 'Тестирование Jest/Cypress' },  
   ],
   skills2: [    
-   // { type: 'info', label: 'Typescript' },
+   { type: 'info', label: 'Typescript' },
+   { type: 'info', label: 'Git' },
    { type: 'info', label: 'REST' },  
    { type: 'info', label: 'Pug' },  
-
-   { type: 'info', label: 'MongoDB' },
+   { type: 'info', label: 'Jest/Cypress' },  
     { type: 'info', label: 'Webpack' },    
-    { type: 'info', label: 'Git' },
     { type: 'info', label: 'Figma' },
     { type: 'info', label: 'Photoshop' },    
    // { type: 'info', label: 'C++' },
    // { type: 'info', label: 'Python' },
    // { type: 'info', label: 'Matlab' },
+   { type: 'info', label: 'MongoDB' },
     { type: 'info', label: 'MySQL' },   
    // { type: 'info', label: 'CMS Opencart' },
    // { type: 'info', label: 'CMS Diafan' }
@@ -56,25 +55,24 @@ export const state = () => ({
       id: '002'
     },
     {
-      date: '2018 - 04.2022',
+      date: '2018 - н.в.',
       title: 'ООО "Эмпис", интернет-агентство полного цикла, г.Москва - <a href="//www.empis.ru" target="_blank">empis.ru</a> ',
-      description: 'Frontend разработка и верстка макетов.',
+      description: 'Frontend разработка, верстка',
       role: 'Верстальщик, Frontend-разработчик',
       status: 'past',
       id: '004'
     },
-    {
-      date: '04.2022 - н.в.',
+   /*  {
+      date: '04.2022 - 2023',
       title: 'ООО "ИПОТЕХ", Иннополис',
       description: 'Разработка Frontend части приложений Nuxt Vue.',
       role: 'Frontend-разработчик',
       status: 'present',
       id: '005'
-    },
+    }, */
   ],
   about: `<div>
-    <p>Некоторая часть моего опыта коммерческой разработки.</p>
-    <p>Проекты, у которых есть ссылка на сайт, могли существенно видоизмениться без моего участия.</p>
+   
   </div>`
 
 })
