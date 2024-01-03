@@ -20,9 +20,9 @@ export const state = () => ({
    { type: 'info', label: 'Typescript' },
    { type: 'info', label: 'Git' },
    { type: 'info', label: 'REST' },  
-   { type: 'info', label: 'Pug' },  
+   /* { type: 'info', label: 'Pug' },   */
    { type: 'info', label: 'Jest/Cypress' },  
-    { type: 'info', label: 'Webpack' },    
+ /*    { type: 'info', label: 'Webpack' },  */   
     { type: 'info', label: 'Figma' },
     { type: 'info', label: 'Photoshop' },    
    // { type: 'info', label: 'C++' },
