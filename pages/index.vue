@@ -8,7 +8,7 @@
       <h3>Ключевые навыки</h3> 
       <AppSkills type="dark" :data="skills"/>
 
-      <h3>Дополнительные знания</h3>
+      <h3>Дополнительные навыки</h3>
       <AppSkills type="dark" :data="skills2"/>      
 
       <h3>Знание иностранных языков</h3>
