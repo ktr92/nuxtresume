@@ -55,6 +55,14 @@ export const state = () => ({
       id: '002'
     },
     {
+      date: '2021 - 2022',
+      title: 'ООО ИПОТЕХ. Иннополис',
+      description: 'Frontend разработка на проекте.',
+      role: 'Frontend-разработчик',
+      status: 'past',
+      id: '004'
+    },
+    {
       date: '2018 - н.в.',
       title: 'ООО "Эмпис", интернет-агентство полного цикла, г.Москва - <a href="//www.empis.ru" target="_blank">empis.ru</a> ',
       description: 'Frontend разработка, верстка',
