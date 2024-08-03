@@ -46,6 +46,11 @@ export const state = () => ({
         name: 'JavaScript',
         sort: 15,
       },       
+      js: {
+        icon: 'ts-logo-128.svg',
+        name: 'TypeScript',
+        sort: 15,
+      },       
       jquery: {
         icon: 'jquery.svg',
         name: 'jQuery',
