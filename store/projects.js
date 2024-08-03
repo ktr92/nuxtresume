@@ -47,7 +47,7 @@ export const state = () => ({
         sort: 15,
       },       
       ts: {
-        icon: 'ts-logo-128.svg',
+        icon: 'ts.svg',
         name: 'TypeScript',
         sort: 15,
       },       
