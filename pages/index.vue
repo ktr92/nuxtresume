@@ -14,8 +14,8 @@
       <h3>Знание иностранных языков</h3>
       <AppSkills type="dark" :data="langs"/>
 
-      <h3>О себе</h3>
-      <AppText :data="description"/>
+     <!--  <h3>О себе</h3>
+      <AppText :data="description"/> -->
 
       <NuxtLink to="/projects"><el-button type="primary">Перейти в портфолио</el-button></NuxtLink>
          
