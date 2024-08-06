@@ -50,7 +50,7 @@ export const state = () => ({
       date: '2015 - 2018',
       title: 'VELVETMEDIA, веб-студия г. Набережные Челны',
       description: 'Верстка HTML CSS JS и интеграция на CMS. Разработка и оптимизация работы веб-сайтов.',
-      role: 'Верстальщик, программист',
+      role: 'Fullstack-разработчик',
       status: 'past',
       id: '002'
     },
@@ -66,7 +66,7 @@ export const state = () => ({
       date: '2018 - н.в.',
       title: 'ООО "Эмпис", интернет-агентство полного цикла, г.Москва - <a href="//www.empis.ru" target="_blank">empis.ru</a> ',
       description: 'Frontend разработка, верстка',
-      role: 'Верстальщик, Frontend-разработчик',
+      role: 'Frontend-разработчик',
       status: 'past',
       id: '004'
     },
